@@ -6,6 +6,7 @@ import HomeScreen from "@/screens/HomeScreen";
 import OtpScreen from "@/screens/OtpScreen";
 import BalanceScreen from "@/screens/BalanceScreen";
 import FocusScreen from "@/screens/FocusScreen";
+import PinScreen from "@/screens/PinScreen";
 // import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 type RootStackParamList = {
@@ -13,6 +14,7 @@ type RootStackParamList = {
   OtpScreen: undefined;
   BalanceScreen: undefined;
   FocusScreen: undefined;
+  PinScreen: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -31,6 +33,7 @@ function App() {
         <Stack.Screen name="OtpScreen" component={OtpScreen} />
         <Stack.Screen name="BalanceScreen" component={BalanceScreen} />
         <Stack.Screen name="FocusScreen" component={FocusScreen} />
+        <Stack.Screen name="PinScreen" component={PinScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
